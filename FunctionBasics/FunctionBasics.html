@@ -18,6 +18,7 @@
     */
     function mainFunction(params){
         console.log("Welcome to ES5 Learning.")
+        receivingParamsEx('Welcome ' , true , 35)
     }
       /* 
          -------------------------The naming convention for a function---------------------
@@ -34,6 +35,16 @@
      function defineParamsEx(param1,param2,param3)
      {
         console.log(param1+param2+param3)
+     }
+      /* 
+         -------------------------Receiving parameters magically---------------------
+      -> In every function, a predefined array-like object 'arguments' is available,this contains all 
+          parameters passed to this function during a call.
+    */
+    function receivingParamsEx()
+     {
+         /* magic array object*/
+        console.log(arguments)
      }
      
     </script>
