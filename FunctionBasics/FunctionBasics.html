@@ -23,6 +23,8 @@
         console.log(test1())
         /*Receive undefine*/
         console.log(test2())
+        //Example of nusted functioon
+        containingFunc();
     }
       /* 
          -------------------------The naming convention for a function---------------------
@@ -83,8 +85,22 @@
          -> Examples:
             test(){}; test(params){};
             We can't do this in the javascript.
-    */
-     
+     */
+      /* 
+         ------------------------- Nested functions ---------------------
+         ->In JS, a function can contain another function.
+         -> The scope of the nested function is limited inside the containing function, 
+            which means we can call outside the containing function only.
+     */
+     function containingFunc()
+     {
+        
+         console.log('I am parent / containing function')
+         function nestedFunc(){
+             console.log('I am nested function')
+         }
+         nestedFunc();
+     }
     </script>
 </head>
 
