@@ -25,6 +25,9 @@
         console.log(test2())
         //Example of nusted functioon
         containingFunc();
+        //Example of calling nested function out side the parent
+        let nestudFunc=containingFunc1();
+            nestudFunc();
     }
       /* 
          -------------------------The naming convention for a function---------------------
@@ -91,6 +94,7 @@
          ->In JS, a function can contain another function.
          -> The scope of the nested function is limited inside the containing function, 
             which means we can call outside the containing function only.
+
      */
      function containingFunc()
      {
@@ -100,6 +104,19 @@
              console.log('I am nested function')
          }
          nestedFunc();
+     }
+      /* 
+         ------------------------- Use nested functions outside the containing function ---------------------
+         ->If we return nested function form containing function, 
+          then we can use outside the containing function.
+     */
+     function containingFunc1()
+     {
+        
+         console.log('I am parent / containing function and i will retuen the nusted function')
+         return function nestedFunc(){
+             console.log('I am nested function and you can call me out side the containing function')
+         }
      }
     </script>
 </head>
