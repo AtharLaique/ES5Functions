@@ -46,6 +46,18 @@
          /* magic array object*/
         console.log(arguments)
      }
+     /* 
+         -------------------------Receiving parameters manually---------------------
+      -> We can also receive parameters manually, and that is not the right approach.
+      -> Examples:
+         Passing params                                 Receiving params
+         test();                                         test(param){ here param is undefined }
+         test("param 1", " param 2");                    test(param){ Here we receive param1 one and other on is waste;}
+         test("param 1" );                             test(param1 , param2){ Here we receive param1 one and param 2 is undefined;}
+
+         So, argument object is a best way to deal with function parameters. 
+
+    */
      
     </script>
 </head>
