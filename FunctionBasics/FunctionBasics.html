@@ -18,7 +18,11 @@
     */
     function mainFunction(params){
         console.log("Welcome to ES5 Learning.")
-        receivingParamsEx('Welcome ' , true , 35)
+        receivingParamsEx('Welcome ' , true , 35);
+        /*Receive something*/
+        console.log(test1())
+        /*Receive undefine*/
+        console.log(test2())
     }
       /* 
          -------------------------The naming convention for a function---------------------
@@ -58,6 +62,21 @@
          So, argument object is a best way to deal with function parameters. 
 
     */
+     /* 
+         -------------------------Return from function---------------------
+      ->-> A function that doesn't return anything explicitly, it returns 'undefined'.
+      -> Examples:
+         Return something
+    */
+          function test1()
+          {   
+               return true;  
+          };    
+        /*   Return undefine*/            
+          function test2()
+          {  
+
+          }; 
      
     </script>
 </head>
