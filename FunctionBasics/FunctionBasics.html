@@ -128,6 +128,15 @@
          alert("I am anonymous function")
       }
       setTimeout(identifier,3000)
+      /* 
+         ------------------------- Properties of Function Data type ---------------------
+     */
+    console.log(typeof(identifier))
+    console.log(identifier.name)//Name of the function
+    console.log(identifier.caller)//Caller of the function
+    console.log(identifier.length)//Number of arguments passd to function
+    console.log(identifier.toString())//Convert body of function into string
+    console.log(identifier.constructor)
     </script>
 </head>
 
